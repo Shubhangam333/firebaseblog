@@ -44,8 +44,6 @@ const signUpWithEmailAndPassword = async ({ email, password }) => {
     const auth = getAuth();
     const res = await createUserWithEmailAndPassword(auth, email, password);
     const user = res.user;
-    console.log("res", res);
-    console.log("user", user);
     const q = query(collection(db, "users"), where("uid", "==", user.uid));
     const docs = await getDocs(q);
     if (docs.docs.length === 0) {

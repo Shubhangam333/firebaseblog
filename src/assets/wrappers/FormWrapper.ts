@@ -33,6 +33,9 @@ const InputContainer = styled.div`
   @media (max-width: 500px) {
     width: 20rem;
   }
+  @media (max-width: 350px) {
+    width: 12rem;
+  }
 `;
 const SubmitButton = styled.button`
   width: 30rem;
@@ -53,6 +56,9 @@ const SubmitButton = styled.button`
   @media (max-width: 500px) {
     width: 20rem;
   }
+  @media (max-width: 350px) {
+    width: 12rem;
+  }
 `;
 
 const ThirdPartyAuth = styled.div`
@@ -72,6 +78,12 @@ const TagContainer = styled.div`
   label {
     color: #d90429;
   }
+  @media (max-width: 500px) {
+    width: 20rem;
+  }
+  @media (max-width: 350px) {
+    width: 12rem;
+  }
 `;
 
 const PostFormContainer = styled.form`
@@ -86,7 +98,10 @@ const PostFormContainer = styled.form`
 const TagInput = styled.div`
   border: 2px solid #8ecae6;
   width: 100%;
+  max-width: 30rem;
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   input {
     padding: 0.4rem;
     font-size: 1.2rem;
@@ -134,6 +149,13 @@ const CategoryContainer = styled.div`
   }
   option {
     background-color: #8ecae6;
+  }
+
+  @media (max-width: 500px) {
+    width: 20rem;
+  }
+  @media (max-width: 350px) {
+    width: 12rem;
   }
 `;
 

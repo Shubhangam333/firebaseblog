@@ -5,7 +5,6 @@ const NavbarWrapper = styled.nav`
   display: flex;
   justify-content: space-between;
   font-size: 1.2rem;
-
   @media (max-width: 500px) {
     &.active {
       flex-direction: column;
@@ -138,7 +137,7 @@ export const AvatarMenu = styled.div`
     top: 2.7rem;
     right: 0;
     border: 2px solid var(--nav-primary-color);
-
+    z-index: 20;
     width: 8rem;
     display: none;
     button {
